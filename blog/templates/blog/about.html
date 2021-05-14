@@ -1,0 +1,52 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="container-fluid p-3">
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Hello, Blogger!</h1>
+      <p>The aim of making this website to help student in study by reading blog, experience, tips, article. Also provide
+        platform to write own blog so, whole community grow. </p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5 ">
+    <div>
+      <h3>Features of Django Blog Web Application</h3>
+    </div>
+    <hr>
+    <ul>
+      <li><strong>Sign Up:</strong> New user can register easily by email id and password. </li>
+      <li><strong>Login:</strong> Register User login by email and password</li>
+      <li><strong>Profile:</strong> User can set own profile. By default Profile Pic set</li>
+      <li><strong>Post:</strong> Only registered user write post after login.</li>
+      <li><strong>Post Update/Delet:</strong> It provide featuer to update & delete post of own not other.</li>
+      <li><strong>About:</strong> This section show aim and feature of website.</li>
+      <li><strong>Contact Us:</strong> Contact website developer through contact form.</li>
+    </ul>
+  </div>
+
+  <div class="container-fluid py-5">
+    <h3>Technology Used</h3>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <h5>Frontend:</h5>
+        <ul >
+          <li>Html</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>Backend:</h5>
+        <ul>
+          <li>Django</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
