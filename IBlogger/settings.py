@@ -23,7 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECRET_KEY = '3hgmuvghy@w+h9vn_7j8^8in9qu55=mp30t=k#pa2m2vkrhb0n'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE'))
 
 ALLOWED_HOSTS = ['myblognotes.herokuapp.com']
 
