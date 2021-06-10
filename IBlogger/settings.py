@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = (os.environ.get('DEBUG_VALUE'))
+DEBUG = (os.environ.get('DEBUG_VALUE')=='True')
 
 ALLOWED_HOSTS = ['myblognotes.herokuapp.com']
 
@@ -77,10 +77,21 @@ WSGI_APPLICATION = 'IBlogger.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2mn7mg8f6g9t8',
+        'USER': 'xnpscdcidvaabk',
+        'PASSWORD':'b8186d56007419fe1b450903cba01fdff3458f1bb7e275c98d4544a5400203ad',
+        'HOST':'ec2-50-17-255-120.compute-1.amazonaws.com',
+        'PORT':5432,
     }
 }
 
