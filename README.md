@@ -1,4 +1,4 @@
-# Django-Blog-
+# Django-Blog
 Created a Full Fledged Blog website using 
 - Django
 - HTML
